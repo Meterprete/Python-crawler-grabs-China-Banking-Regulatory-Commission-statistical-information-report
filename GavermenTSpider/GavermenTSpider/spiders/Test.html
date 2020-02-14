@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>中国银行保险监督管理委员会</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="SiteName" content="">
+    <meta name="SiteDomain" content="">
+    <meta name="SiteIDCode" content="">
+    <meta name="ColumnName" content="">
+    <meta name="ColumnDescription" content="">
+    <meta name="ColumnKeywords" content="">
+    <meta name="ColumnType" content="">
+    <meta http-equiv="Window-target" content="_top">
+    <link rel="Shortcut Icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/cn/css/common/base.css?v=20200108" rel="stylesheet" />
+    <link href="/cn/css/common/Common.css?v=20200108" rel="stylesheet" />
+    <!--[if lt IE 9]>
+       <script src="/cn/js/common/html5shiv.min.js"></script>
+       <script src="/cn/js/common/respond.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="main ng-cloak" ng-app="myApp">
+
+        <tpl src="/cn/view/components/Header.html"></tpl>
+        <div class="content" ng-controller="itemListCtrl">
+            <link href="/cn/css/common/share.css?v=20200108" rel="stylesheet" />
+            <!-- <div class="breadcrumb">
+                <ul>
+                    <li>当前位置：
+                        <span id="currentLocation"></span>
+                    </li>
+                </ul>
+            </div> -->
+            <div class="breadcrumb">
+                <ul>
+                    <li>当前位置：
+                        <a href="/cn/view/pages/index/index.html">首页</a>
+                    </li>
+                    <li ng-repeat="x in breadcrumb_detail">
+                        <a ng-href="{{x|breadcrumbitemUrl}}">{{x.itemName}}&nbsp;</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main">
+                <div class="row container">
+                    <div class="caidan-left-div">
+                        <tpl src="/cn/view/pages/ItemListSide.html"></tpl>
+                    </div>
+                    <div class="caidan-right-div">
+                        <tpl id="itemList"></tpl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <tpl src="/cn/view/components/Footer.html"></tpl>
+    </div>
+    <script src="/cn/js/common/jquery/jquery-1.11.2.min.js"></script>
+    <script>
+        function queryParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        };
+        $("#itemList").attr("src", "/cn/view/pages/" + queryParam("itemUrl"));
+    </script>
+    <script src="/cn/js/common/angular.1.2.32.min.js"></script>
+    <script src="/cn/js/common/jquery.share.min.js"></script>
+
+    <script src="/cn/js/common/Script.js?v=20200108"></script>
+    <script src="/cn/js/common/Nav.js?v=20200108"></script>
+    <script src="/cn/js/common/ItemList.js?v=20200108"></script>
+    <!--custom-->
+</body>
+
+</html>
