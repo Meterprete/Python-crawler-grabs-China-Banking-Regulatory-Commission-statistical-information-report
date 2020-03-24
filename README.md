@@ -18,5 +18,4 @@
 主要逻辑代码如下图所示：![在这里插入图片描述](https://img-blog.csdnimg.cn/20200214194013328.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDQ0OTUxOA==,size_16,color_FFFFFF,t_70)
 piplines：![在这里插入图片描述](https://img-blog.csdnimg.cn/20200214194117350.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDQ0OTUxOA==,size_16,color_FFFFFF,t_70)
 **运行截图：**![在这里插入图片描述](https://img-blog.csdnimg.cn/20200214194551197.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDQ0OTUxOA==,size_16,color_FFFFFF,t_70)
-**可以看到，速度还是不错的，大约13秒，抓取了55页信息，总计976条数据，并且看到信息也听纯净的。**
-嗯。。。。。虽然今天过的不太快乐，在不知道导员身份的情况下骂了他的🐎，故做了个简单的数据爬取平静一下心情
+**可以看到，速度还是不错的，大约13秒，抓取了55页信息，总计976条数据，并且看到信息也挺纯净的。**
